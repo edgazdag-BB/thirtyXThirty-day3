@@ -8,9 +8,8 @@ import { Product } from '../model/product';
 })
 export class ProductDetailsComponent {
   @Input() product!: Product;
+  @Input() productCategories!: string[];
   @Output() productUpdated: EventEmitter<Product> = new EventEmitter<Product>();
-
-  productCategories: string[] = ['Personal Care', 'Food/Drink', 'Lawn & Garden'];
-
+  
   constructor() { }
 }

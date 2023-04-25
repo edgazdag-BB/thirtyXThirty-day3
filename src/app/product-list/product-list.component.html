@@ -40,5 +40,5 @@
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr class="data-row" mat-row *matRowDef="let row; columns: displayedColumns;" (click)="updateProduct(row)"></tr>
+  <tr class="data-row" mat-row *matRowDef="let row; columns: displayedColumns;" (click)="editProduct.emit(row)"></tr>
 </table>

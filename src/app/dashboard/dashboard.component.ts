@@ -16,6 +16,9 @@ export class DashboardComponent implements OnInit {
     { id: 5, productName: "Doritos", quantity: 9, price: 4.39, category: "Food/Drink" },
   ];
 
+  displayedColumns: string[] = ['id', 'name', 'category', 'quantity', 'price', 'delete'];
+  productCategories: string[] = ['Personal Care', 'Food/Drink', 'Lawn & Garden'];
+
   currentProduct: Product;
 
   constructor() {
@@ -37,7 +40,7 @@ export class DashboardComponent implements OnInit {
   }
 
   updateProduct(product: Product) {
-    this.currentProduct = product;
+    this.currentProduct = {...product};
   }
 
   updateProductDetails(product: Product) {
