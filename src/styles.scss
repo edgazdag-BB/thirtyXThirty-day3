@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+.flex {
+  display: flex;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+table { width: 100%;}
+tr.data-row:hover { 
+  background-color: grey;
+}
+
+.product-list-component {
+  width: 100%; 
+  max-width: fit-content; 
+  min-width: 500px;
+  padding: 20px
+}
+
+.product-detail-component {
+  width: 100%;
+  max-width: 250px;
+  padding-top: 75px;
+  padding: auto;
+}
+
+.detail-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  align-items: flex-start;
+}
+
+.detail-radio-button {
+  margin: 5px;
+}
