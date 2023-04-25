@@ -12,6 +12,4 @@ export class ProductListComponent {
   @Output() addProduct = new EventEmitter();
   @Output() editProduct: EventEmitter<Product> = new EventEmitter<Product>();
   @Output() deleteProduct: EventEmitter<number> = new EventEmitter<number>();
-
-  constructor() {}
 }

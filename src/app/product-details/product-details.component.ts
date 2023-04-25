@@ -10,6 +10,4 @@ export class ProductDetailsComponent {
   @Input() product!: Product;
   @Input() productCategories!: string[];
   @Output() productUpdated: EventEmitter<Product> = new EventEmitter<Product>();
-  
-  constructor() { }
 }
